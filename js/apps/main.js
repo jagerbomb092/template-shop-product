@@ -224,12 +224,8 @@
 
         if ($(".footer")[0].getBoundingClientRect().top - $(".footer").innerHeight() * 2 <= 0 && $(".footer")[0].getBoundingClientRect().bottom - $(".footer").innerHeight() >= 1) {
           let bottom = current - $(".footer").offset().top + ($(win).innerHeight() < $(".footer").innerHeight() ? $(".footer").innerHeight() : $(win).innerHeight());
-          console.log("bottom", bottom);
-          console.log("current", current);
-          console.log("$(.footer).innerHeight()", $(win).innerHeight());
 
           let progress = bottom / $(".footer").innerHeight();
-          console.log("progress", progress);
 
           // let postion =
           //   (($('.footer')[0].getBoundingClientRect().bottom -
