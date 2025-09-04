@@ -107,8 +107,9 @@
       // target: '.wrap',
       duration: 1,
       ease: animate.defaultEasing.Power2.easeOut,
+      // ease: animate.defaultEasing.easeInOutBounce,
       // ease: animate.defaultEasing.Sine.easeInOut,
-      // ease: BezierEasing(0.65, 0, 0.35, 1),
+      // ease: animate.customEase(0.65, 0, 0.35, 1),
       onScrolling: (current) => {
         if (isElementInViewport($(".js-spot-section")[0])) {
           var percent = current / $(".js-spot-section").innerHeight();
